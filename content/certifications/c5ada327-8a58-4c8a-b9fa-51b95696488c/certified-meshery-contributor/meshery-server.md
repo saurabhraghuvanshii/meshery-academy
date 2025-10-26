@@ -727,9 +727,9 @@ questions:
     options:
       - id: "a"
         text: "String"
+        is_correct: true
       - id: "b"
         text: "Integer"
-        is_correct: true
       - id: "c"
         text: "Float"
       - id: "d"

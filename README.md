@@ -86,6 +86,45 @@ weight: 10  # for menu order, lower numbers appear first
 ```
 
 ---
+## Developing Certification Exams
+
+Now you're ready to create your certification exam.
+A high-level view of the structure looks like this:
+
+```text
+content/
+└── certifications/
+    ├── _index.md
+    └── <organization-uid>/
+        └── certified-meshery-associate/
+            ├── _index.md
+            └── exam-1.md
+            └── exam-2.md
+        └── certified-meshery-contributor/
+            ├── _index.md
+            └── exam-1.md
+            └── exam-2.md
+```
+- Create your folder structure following the hierarchy.
+- Add your exam as Markdown (.md) files inside the exam directory, for e.g. in `certified-meshery-contributor` directory.
+- Each `_index.md` and `exam` file should begin with Hugo front-matter specifying title, description, weight, pass_percentage, max_attempts, time_limit, number_of_questions and questions.
+
+```yaml
+---
+title: "Meshery xxxx Contributor Exam"
+type: "test"
+layout: "test"
+weight: 2
+pass_percentage: 70
+max_attempts: 3
+time_limit: 30
+number_of_questions: 25
+questions:
+    ...
+
+---
+```
+- Ensure that each `exam` contains question pool as multiple of `number_of_questions`. For e.g., if the exam has `number_of_questions` is 25, the question pool could be 50 or 75 or so on.
 
 ## Managing Assets: Images, Videos, and Embedded Designs
 
