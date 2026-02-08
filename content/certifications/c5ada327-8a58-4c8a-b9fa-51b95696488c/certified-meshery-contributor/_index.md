@@ -18,7 +18,7 @@ certificate:
     issuing_authorities:
       - name: "Meshery Authors"
         role: "Maintainers"
-        signature_url: "https://raw.githubusercontent.com/meshery-extensions/meshery-academy/6843c0074f73932274864aa68773ab605fd69ef3/static/c5ada327-8a58-4c8a-b9fa-51b95696488c/images/meshery-authors.svg"
+        signature_url: "https://raw.githubusercontent.com/meshery-extensions/meshery-academy/6843c0074f73932274864aa68773ab605fd69ef3/static/c5ada327-8a58-4c8a-b9fa-51b95696488c/images/meshery-authors.png"
 
 # Table of content covered in the test
 # Each domain can have a weightage (percentage) and subdomains (items)
@@ -158,7 +158,7 @@ related_resources:
       - title: "Contributing to Meshery CLI (slides)"
         link: https://docs.google.com/presentation/d/1lRop7DAAMUBmuFdzZK25LdQrkLG08eVsXEaDrauP3S8/edit?usp=sharing
       - title: "Reference: Meshery CLI Commands"
-        link: "https://docs.meshery.io/reference/cli/commands"
+        link: "https://docs.meshery.io/reference/mesheryctl"
 
   - title: "Self-paced Training: Meshery UI"
     children:
